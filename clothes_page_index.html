@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="clothes_page_style.css">
+    <title>ASOLA ASOLA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <!-- head -->
+    <nav class="navbar">
+        <div class="logo"><h1>أسوله العسوله</h1></div>
+        <ul class="menu">
+            <li><a href="about_us_page_index.html">معلومات</a></li>
+            <li><a href="#"><i class="fas fa-shopping-cart"></i>عربة التسوق</a></li> 
+            <li><a href="#">الحسابات</a></li>
+            <li><a href="clothes_page_index.html" class="active">الملابس</a></li>
+            <li><a href="index.html">الشاشة الرئيسية</a></li>
+        </ul>
+        <div class="menu-btn">
+            <i class="fa fa-bars"></i>
+        </div>
+    </nav>
+
+    <h2 class="pheading">: أحدث منتجاتنا</h2>
+
+    <section class="sec">
+
+        <div class="products">
+
+            <!-- بداية الكرت -->
+            <div class="card">
+                <div class="img"><img src="" alt="صورة المنتج"></div>
+                <div class="desc">الوصف</div>
+                <!-- الوصف: نساء، مراهقون، أطفال -->
+                <div class="title">اسم المنتج</div>
+                <div class="box">
+                    <div class="price">السعر</div>
+                    <button class="btn">إضافه الي عربة التسوق</button>
+                </div>
+            </div>
+            <!-- نهاية الكرت -->
+
+        </div>
+    </section>
+    <section class="sec2">
+        <h2 class="pheading">: جميع المتنجات</h2>
+
+        <div class="products">
+            <div class="card">
+                <div class="img"><img src="" alt="صورة المنتج"></div>
+                <div class="desc">الوصف</div>
+                <!-- الوصف: نساء، مراهقون، أطفال -->
+                <div class="title">اسم المنتج</div>
+                <div class="box">
+                    <div class="price">السعر</div>
+                    <button class="btn">إضافه الي عربة التسوق</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; <a href="#">أسوله</a></p>
+    </footer>
+
+
+    <!-- jquery -->
+
+    <script>
+        $(".menu-btn").click(function (){
+            $(".navbar .menu").toggleClass("active")
+            $(".menu-btn i").toggleClass("active");
+        });
+    </script>
+</body>
+</html>
